@@ -3,9 +3,8 @@ function sendNotification(email) {
     return "Invalid Email";
   }
 
-  const charLength = email.length;
   let multipleChar = [];
-  for (let i = 0; i <= charLength; i++) {
+  for (let i = 0; i <= email.length; i++) {
     if (email[i] === "@") {
       multipleChar.push(email[i]);
     }

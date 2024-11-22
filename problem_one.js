@@ -1,11 +1,10 @@
 function calculateTax(income, expenses) {
-    if (income < 0 || expenses < 0 || expenses > income) {
-      return 'Invalid Input'
-    }
-    let payableTax = (income - expenses) * .20;
-    return payableTax;
+  if (income < 0 || expenses < 0 || expenses > income) {
+    return "Invalid Input";
+  }
+  let payableTax = (income - expenses) * 0.2;
+  return payableTax;
 }
-
 
 console.log(calculateTax(10000, 3000));
 console.log(calculateTax(34000, 1753));

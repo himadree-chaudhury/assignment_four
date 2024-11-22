@@ -17,14 +17,12 @@ function calculateFinalScore(obj) {
   ) {
     return "Invalid Input";
   }
+
   let testScore = obj.testScore + obj.schoolGrade;
   if (obj.isFFamily === true) {
     testScore += 20;
   }
-  if (testScore >= 80) {
-    return true;
-  }
-  return false;
+  return testScore >= 80 ? true : false;
 }
 
 console.log(

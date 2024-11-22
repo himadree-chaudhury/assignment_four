@@ -18,3 +18,4 @@ console.log(checkDigitsInName("Suman"));
 console.log(checkDigitsInName("Name2024"));
 console.log(checkDigitsInName("!@#"));
 console.log(checkDigitsInName(["Raj"]));
+console.log(checkDigitsInName(5));

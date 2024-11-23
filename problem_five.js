@@ -24,3 +24,11 @@ console.log(waitingTime(7, 10));
 console.log(waitingTime("[6,2]", 9));
 console.log(waitingTime([7, 8, 3, 4, 5], "9"));
 console.log(waitingTime([7, 8, 3, 4, 5], 6));
+console.log(
+  waitingTime({
+    name: "Rajib",
+    testScore: 15,
+    schoolGrade: 25,
+    isFFamily: true,
+  })
+);

@@ -1,4 +1,8 @@
 function sendNotification(email) {
+  if (typeof email !== "string") {
+    return "Invalid Email";
+  }
+
   if (!email.includes("@")) {
     return "Invalid Email";
   }
@@ -24,3 +28,5 @@ console.log(sendNotification("nadim.naem5@outlook.com"));
 console.log(sendNotification("fahim234.hotmail.com"));
 console.log(sendNotification("sadia8icloud.com"));
 console.log(sendNotification("sadia8@@icloud.com"));
+console.log(sendNotification("sadia8@@icloud.com"));
+console.log(sendNotification(5));
